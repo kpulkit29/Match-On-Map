@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+<title>Match on Map</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+<link rel="stylesheet" href="/stylesheet/style.css">
+</head>
+<body ng-controller="control1">
+<div>
+   <header>
+       <h2 style="margin-left:30px;"><img src="/images/map.svg" style="width:80px;height:80px;"> Match on map</h2>
+   </header>
+    <md-progress-linear md-mode="indeterminate" ng-if="loaded" style="margin-top:20px;"></md-progress-linear>
+
+        <div id="map" class="text-center"></div>
+    
+    
+    <footer>
+        <div class="row">
+            <div class="col-md-2">
+                   <md-button class="md-fab md-warn"  aria-label="Comment" ng-click="plusDivs(-1)" style="float:right;">
+            <md-icon md-svg-src="/images/back.svg"></md-icon>
+        </md-button>
+               </div>
+                <div class="col-md-8 text-center">
+                       <button class="btn btn-primary slide md-raised" ng-click="makeCall($event)">India</button>
+                        <button class="btn btn-warning slide md-raised" ng-click="makeCall($event)">Australia</button> 
+                       <button class="btn btn-info slide md-raised" ng-click="makeCall($event)">England</button> 
+                </div>
+                <div class="col-md-2">
+                      <md-button class="md-fab md-warn"  aria-label="Comment" ng-click="plusDivs(1)" style="float:left;">
+            <md-icon md-svg-src="/images/next.svg"></md-icon>
+        </md-button>
+                </div>
+    </div>
+    </footer>
+    
+  
+    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAWvrSe3zwkOBYohBVcvgHkNvRU2OFHMdo&libraries=places'></script>
+<script src="/js/control.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+#map{
+    width:80%;
+    height: 600px;
+    margin:0 auto;
+}
+.btn{
+    width:30%;
+    height:auto;
+    text-align: center;
+    vertical-align: middle;
+    border:2px solid #FF6347;
+}
+.row{
+    align-items: center;
+}
+header{
+    height:4%;
+    background-color: 	#FF6347;
+    color:white;
+    margin-bottom:20px;
+}
+
